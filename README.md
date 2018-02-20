@@ -6,5 +6,5 @@ There are plenty 'how-to'request (in the slack group) so I decided to create a r
 is to serve as the quick reference on how to implement anything the developer is not clear on without necessarily reading through
 a long tutorial just for a few lines of code.
 
-# Pull requests are definitely welcome
+###### Pull requests are definitely welcome
 
