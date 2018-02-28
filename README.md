@@ -16,7 +16,11 @@ The error I get from Heroku was a `401` error. This is a good clue incase anybod
 
 ###### How to listen for Quick reply buttons/Location buttons in a convo thread?
 
-Simply set the `convo.messageTypes` to an array containing whatever message/event type you want to listen for. Check out the code snippet example [here](https://github.com/OAyomide/awesome-botpress-messenger-tricks-howtos/Convo/LocationButton.js)
+Simply set the `convo.messageTypes` to an array containing whatever message/event type you want to listen for. Check out the code snippet example [here](https://github.com/OAyomide/awesome-botpress-messenger-tricks-howtos/blob/master/Convo/LocationButton.js)
+
+###### How to prevent DialogFlow from intercepting messages
+There are times when you'd need the dialogFlow module not to mess up your flow. For example, when you are taking user data/information from a user --Email for example. When the user inputs the information, it triggers something else instead of being stored or something. To prevent this, you simply re-arrange the middleware.
+> The reason the text sent to the user is processed by the DialogFlow module is because messages coming into the middleware are process by the order in which the middleware is arranged. When you jus install the module, it gets arranged at the top. Please go [here](https://botpress.io/docs/advanced/middleware)
 
 ###### Pull requests are definitely welcome
 
